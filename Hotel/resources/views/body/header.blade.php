@@ -108,7 +108,7 @@
                                 </div>
     
                                 <!-- item-->
-                                <a href="javascript:void(0);" class="dropdown-item notify-item">
+                                <a href="{{ route('admin.profile') }}" class="dropdown-item notify-item">
                                     <i class="fe-user"></i>
                                     <span>My Account</span>
                                 </a>
@@ -162,7 +162,7 @@
                                 <img src="{{ asset('backend/assets/images/logo-sm.png') }}" alt="" height="22">
                             </span>
                             <span class="logo-lg">
-                                <img src="assets/images/logo-light.png" alt="" height="20">
+                                <img src="{{ asset('backend/assets/images/logo-light.png') }}" alt="" height="20">
                             </span>
                         </a>
                     </div>
