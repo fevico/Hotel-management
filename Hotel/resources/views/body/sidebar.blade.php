@@ -39,40 +39,16 @@
                             <li>
                                 <a href="#sidebarEcommerce" data-bs-toggle="collapse">
                                     <i class="mdi mdi-cart-outline"></i>
-                                    <span> Ecommerce </span>
+                                    <span> Slider </span>
                                     <span class="menu-arrow"></span>
                                 </a>
                                 <div class="collapse" id="sidebarEcommerce">
                                     <ul class="nav-second-level">
                                         <li>
-                                            <a href="ecommerce-dashboard.html">Dashboard</a>
+                                            <a href="{{ route('admin-slider') }}">Add Slider</a>
                                         </li>
                                         <li>
                                             <a href="ecommerce-products.html">Products</a>
-                                        </li>
-                                        <li>
-                                            <a href="ecommerce-product-detail.html">Product Detail</a>
-                                        </li>
-                                        <li>
-                                            <a href="ecommerce-product-edit.html">Add Product</a>
-                                        </li>
-                                        <li>
-                                            <a href="ecommerce-customers.html">Customers</a>
-                                        </li>
-                                        <li>
-                                            <a href="ecommerce-orders.html">Orders</a>
-                                        </li>
-                                        <li>
-                                            <a href="ecommerce-order-detail.html">Order Detail</a>
-                                        </li>
-                                        <li>
-                                            <a href="ecommerce-sellers.html">Sellers</a>
-                                        </li>
-                                        <li>
-                                            <a href="ecommerce-cart.html">Shopping Cart</a>
-                                        </li>
-                                        <li>
-                                            <a href="ecommerce-checkout.html">Checkout</a>
                                         </li>
                                     </ul>
                                 </div>

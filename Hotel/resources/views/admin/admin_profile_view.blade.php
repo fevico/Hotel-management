@@ -51,12 +51,13 @@
 
 
         </div> <!-- end col-->
-        <form method="post" action="{{ route('admin.profile.store') }}" enctype="multipart/form-data">
-            @csrf 
-
+        
         <div class="col-lg-8 col-xl-8">
             <div class="card">
                 <div class="card-body">
+        <form method="post" action="{{ route('admin.profile.store') }}" enctype="multipart/form-data">
+            @csrf 
+
                 <div class="mb-3">
                     <label for="simpleinput" class="form-label">Name</label>
                     <input type="text" id="simpleinput" name="name" value="{{ $adminData->name }}" class="form-control">
@@ -85,9 +86,10 @@
                 </div>
                      <!-- end tab-content -->
                 </div>
-            </div> <!-- end card-->
+            </div> 
+            <button type="submit" class="btn btn-primary rounded-pill waves-effect waves-light">Update</button>
+    <!-- end card-->
         </div>
-        <button type="submit" class="btn btn-primary rounded-pill waves-effect waves-light">Update</button>
 
         </form>
     
