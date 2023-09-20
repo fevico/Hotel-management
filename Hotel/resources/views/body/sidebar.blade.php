@@ -48,7 +48,7 @@
                                             <a href="{{ route('admin-slider') }}">Add Slider</a>
                                         </li>
                                         <li>
-                                            <a href="ecommerce-products.html">Products</a>
+                                            <a href="{{ route('admin-all-slider') }}">All Slider</a>
                                         </li>
                                     </ul>
                                 </div>

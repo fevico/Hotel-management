@@ -43,6 +43,8 @@ Route::middleware(['auth','role:admin'])->group(function(){
 Route::middleware(['auth','role:admin'])->group(function(){
     Route::controller(SliderController::class)->group(function(){
         Route::get('/admin/add/slider', 'AdminAddSlider')->name('admin-slider');
+        Route::get('/admin/all/slider', 'AdminAllSlider')->name('admin-all-slider');
+        Route::post('//slider/store', 'SliderStore')->name('slider.store');
     });
 
 });

@@ -8,7 +8,7 @@
                                 <h3>Montana Resort</h3>
                                 <p>Unlock to enjoy the view of Martine</p>
                             </div>
-                        </div>
+                        </div> 
                     </div>
                 </div>
             </div>
