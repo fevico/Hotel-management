@@ -3,6 +3,7 @@
 use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\AdminController;
 use App\Http\Controllers\Backend\SliderController;
+use App\Http\Controllers\CategoryControler;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -44,7 +45,16 @@ Route::middleware(['auth','role:admin'])->group(function(){
     Route::controller(SliderController::class)->group(function(){
         Route::get('/admin/add/slider', 'AdminAddSlider')->name('admin-slider');
         Route::get('/admin/all/slider', 'AdminAllSlider')->name('admin-all-slider');
-        Route::post('//slider/store', 'SliderStore')->name('slider.store');
+        Route::post('/slider/store', 'SliderStore')->name('slider.store');
+        Route::get('/edit/slider/{id}', 'SliderEdit')->name('edit-slider');
+        Route::post('/update/slider', 'SliderUpdate')->name('slider.update');
+        Route::get('/delete/slider/{id}', 'SliderDelete')->name('delete-slider');
+    });
+
+    Route::controller(CategoryControler::class)->group(function(){
+        Route::get('/all/category', 'AllCetegory')->name('all-category');
+        Route::get('/add/category', 'AddCetegory')->name('add-category');
+        Route::post('/store/category', 'CetegoryStore')->name('category-store');
     });
 
 });

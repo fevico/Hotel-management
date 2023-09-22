@@ -57,26 +57,18 @@
                 <li>
                     <a href="#sidebarCrm" data-bs-toggle="collapse">
                         <i class="mdi mdi-account-multiple-outline"></i>
-                        <span> CRM </span>
+                        <span> Category Manage</span>
                         <span class="menu-arrow"></span>
                     </a>
                     <div class="collapse" id="sidebarCrm">
                         <ul class="nav-second-level">
                             <li>
-                                <a href="crm-dashboard.html">Dashboard</a>
+                                <a href="{{ route('add-category') }}">Add Category</a>
                             </li>
                             <li>
-                                <a href="crm-contacts.html">Contacts</a>
+                                <a href="{{ route('all-category') }}">All Category</a>
                             </li>
                             <li>
-                                <a href="crm-opportunities.html">Opportunities</a>
-                            </li>
-                            <li>
-                                <a href="crm-leads.html">Leads</a>
-                            </li>
-                            <li>
-                                <a href="crm-customers.html">Customers</a>
-                            </li>
                         </ul>
                     </div>
                 </li>
