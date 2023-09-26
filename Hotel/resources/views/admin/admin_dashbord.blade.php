@@ -50,7 +50,7 @@
             <!-- ============================================================== -->
 
             <div class="content-page">
-                @yield('admin')
+                @yield('admin') 
                 <!-- content -->
 
                 <!-- Footer Start -->

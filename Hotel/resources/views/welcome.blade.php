@@ -106,7 +106,7 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div> 
     <!-- forQuery_end-->
 
     <!-- instragram_area_start -->
@@ -114,7 +114,7 @@
     <!-- instragram_area_end -->
 
     <!-- footer -->
-   @include('frontend.body.footer')
+   @include('frontend.body.footer') 
     <!-- link that opens popup -->
 
     <!-- form itself end-->

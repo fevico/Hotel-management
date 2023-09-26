@@ -76,7 +76,6 @@
             <div class="text-center d-grid">
                 <button class="btn btn-primary" type="submit"> Log In </button>
             </div>
-
         </form>
 
 

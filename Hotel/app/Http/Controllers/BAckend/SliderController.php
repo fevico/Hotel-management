@@ -83,7 +83,7 @@ public function SliderDelete($id){
     $slider_image = $old_image->slider_image;
     unlink($slider_image);
 
-    Slider::findOrFail($id)->delete();
+    Slider::findOrFail($id)->delete(); 
     $notification = array(
         'message' => 'Slider Deleted Successfully',
         'alert-type' => 'success'
