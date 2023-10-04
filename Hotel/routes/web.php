@@ -3,6 +3,7 @@
 use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\AdminController;
 use App\Http\Controllers\Backend\SliderController;
+use App\Http\Controllers\Backend\AboutController;
 use App\Http\Controllers\CategoryControler;
 use Illuminate\Support\Facades\Route;
 
@@ -50,12 +51,17 @@ Route::middleware(['auth','role:admin'])->group(function(){
         Route::post('/update/slider', 'SliderUpdate')->name('slider.update');
         Route::get('/delete/slider/{id}', 'SliderDelete')->name('delete-slider');
     });
-
+// category all route 
     Route::controller(CategoryControler::class)->group(function(){
         Route::get('/all/category', 'AllCetegory')->name('all-category');
         Route::get('/add/category', 'AddCetegory')->name('add-category');
         Route::post('/store/category', 'CetegoryStore')->name('category-store');
     });
+// about all route 
+    Route::controller(AboutController::class)->group(function(){
+        Route::get('/update/about', 'UpdateAbout')->name('update-about');
+        Route::post('/store/about', 'StoreAbout')->name('about.store');
+    });
 
-});
+}); 
 require __DIR__.'/auth.php';

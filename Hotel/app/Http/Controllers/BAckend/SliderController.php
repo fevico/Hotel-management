@@ -8,7 +8,7 @@ use App\Models\Slider;
 use Intervention\Image\Facades\Image;
 
 class SliderController extends Controller
-{
+{ 
     //
     public function AdminAddSlider(){
         return view('backend.slider.admin_add_slider');

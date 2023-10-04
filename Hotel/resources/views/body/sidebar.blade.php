@@ -35,6 +35,20 @@
 
                             </li>
 
+                <li>
+                    <a href="#about" data-bs-toggle="collapse">
+                        <i class="mdi mdi-cart-outline"></i>
+                        <span> About Mange </span>
+                        <span class="menu-arrow"></span>
+                    </a>
+                    <div class="collapse" id="about">
+                        <ul class="nav-second-level">
+                            <li>
+                                <a href="{{ route('update-about') }}">Update About</a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
 
                             <li>
                                 <a href="#sidebarEcommerce" data-bs-toggle="collapse">
