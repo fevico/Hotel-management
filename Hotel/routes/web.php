@@ -4,6 +4,7 @@ use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\AdminController;
 use App\Http\Controllers\Backend\SliderController;
 use App\Http\Controllers\Backend\AboutController;
+use App\Http\Controllers\Backend\RoomController;
 use App\Http\Controllers\CategoryControler;
 use Illuminate\Support\Facades\Route;
 
@@ -61,6 +62,12 @@ Route::middleware(['auth','role:admin'])->group(function(){
     Route::controller(AboutController::class)->group(function(){
         Route::get('/update/about', 'UpdateAbout')->name('update-about');
         Route::post('/store/about', 'StoreAbout')->name('about.store');
+    });
+
+    Route::controller(RoomController::class)->group(function(){
+        Route::get('/all/room', 'AllRoom')->name('all-room');
+        Route::get('/add/room', 'AddRoom')->name('add-room');
+        Route::post('/room/store', 'RoomStore')->name('room.store');
     });
 
 }); 

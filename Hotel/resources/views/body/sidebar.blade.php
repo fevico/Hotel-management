@@ -50,66 +50,60 @@
                     </div>
                 </li>
 
-                            <li>
-                                <a href="#sidebarEcommerce" data-bs-toggle="collapse">
-                                    <i class="mdi mdi-cart-outline"></i>
-                                    <span> Slider </span>
-                                    <span class="menu-arrow"></span>
-                                </a>
-                                <div class="collapse" id="sidebarEcommerce">
-                                    <ul class="nav-second-level">
-                                        <li>
-                                            <a href="{{ route('admin-slider') }}">Add Slider</a>
-                                        </li>
-                                        <li>
-                                            <a href="{{ route('admin-all-slider') }}">All Slider</a>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </li>
-
                 <li>
-                    <a href="#sidebarCrm" data-bs-toggle="collapse">
-                        <i class="mdi mdi-account-multiple-outline"></i>
-                        <span> Category Manage</span>
+                    <a href="#sidebarEcommerce" data-bs-toggle="collapse">
+                        <i class="mdi mdi-cart-outline"></i>
+                        <span> Slider </span>
                         <span class="menu-arrow"></span>
                     </a>
-                    <div class="collapse" id="sidebarCrm">
+                    <div class="collapse" id="sidebarEcommerce">
                         <ul class="nav-second-level">
                             <li>
-                                <a href="{{ route('add-category') }}">Add Category</a>
+                                <a href="{{ route('admin-slider') }}">Add Slider</a>
                             </li>
                             <li>
-                                <a href="{{ route('all-category') }}">All Category</a>
+                                <a href="{{ route('admin-all-slider') }}">All Slider</a>
                             </li>
-                            <li>
                         </ul>
                     </div>
                 </li>
 
+        <li>
+            <a href="#sidebarCrm" data-bs-toggle="collapse">
+                <i class="mdi mdi-account-multiple-outline"></i>
+                <span> Category Manage</span>
+                <span class="menu-arrow"></span>
+            </a>
+            <div class="collapse" id="sidebarCrm">
+                <ul class="nav-second-level">
+                    <li>
+                        <a href="{{ route('add-category') }}">Add Category</a>
+                    </li>
+                    <li>
+                        <a href="{{ route('all-category') }}">All Category</a>
+                    </li>
+                    <li>
+                </ul>
+            </div>
+        </li>
+
+    <li>
+        <a href="#sidebarEmail" data-bs-toggle="collapse">
+            <i class="mdi mdi-email-multiple-outline"></i>
+            <span> Room Manage </span>
+            <span class="menu-arrow"></span>
+        </a>
+        <div class="collapse" id="sidebarEmail">
+            <ul class="nav-second-level">
                 <li>
-                    <a href="#sidebarEmail" data-bs-toggle="collapse">
-                        <i class="mdi mdi-email-multiple-outline"></i>
-                        <span> Email </span>
-                        <span class="menu-arrow"></span>
-                    </a>
-                    <div class="collapse" id="sidebarEmail">
-                        <ul class="nav-second-level">
-                            <li>
-                                <a href="email-inbox.html">Inbox</a>
-                            </li>
-                            <li>
-                                <a href="email-read.html">Read Email</a>
-                            </li>
-                            <li>
-                                <a href="email-compose.html">Compose Email</a>
-                            </li>
-                            <li>
-                                <a href="email-templates.html">Email Templates</a>
-                            </li>
-                        </ul>
-                    </div>
+                    <a href="{{ route('all-room') }}">All Rooms</a>
                 </li>
+                <li>
+                    <a href="email-read.html">Read Email</a>
+                </li>
+            </ul>
+        </div>
+    </li>
 
                             
 
