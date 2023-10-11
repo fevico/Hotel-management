@@ -68,6 +68,9 @@ Route::middleware(['auth','role:admin'])->group(function(){
         Route::get('/all/room', 'AllRoom')->name('all-room');
         Route::get('/add/room', 'AddRoom')->name('add-room');
         Route::post('/room/store', 'RoomStore')->name('room.store');
+        Route::get('/room/edit/{id}', 'RoomEdit')->name('edit-room');
+        Route::post('/room/update', 'RoomUpdate')->name('room.update');
+        Route::get('/room/delete/{id}', 'RoomDelete')->name('delete-room');
     });
 
 }); 
