@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\AdminController;
+use App\Http\Controllers\UserController;
 use App\Http\Controllers\Backend\SliderController;
 use App\Http\Controllers\Backend\AboutController;
 use App\Http\Controllers\Backend\RoomController;
@@ -24,7 +25,7 @@ Route::get('/', function () {
 });
 
 Route::get('/dashboard', function () { 
-    return view('dashboard');
+    return view('user.index');
 })->middleware(['auth', 'verified'])->name('dashboard'); 
 
 Route::middleware('auth')->group(function () {
@@ -34,6 +35,7 @@ Route::middleware('auth')->group(function () {
 });
 
 Route::get('/admin/logout', [AdminController::class, 'AdminLogout'])->name('admin.logout');
+Route::get('/user/logout', [UserController::class, 'UserLogout'])->name('user-logout');
 
 Route::middleware(['auth','role:admin'])->group(function(){
     Route::get('/admin/dashboard', [AdminController::class, 'AdminDashboard'])->name('admin.dashboard');
